@@ -35,3 +35,23 @@ tl.set('#Shadow', {
 },
   '<',
 )
+
+var btnPause = document.querySelector('.js-pause');
+btnPause.onclick = function (){
+  tl.paused(!tl.paused());
+}
+
+var btnFast = document.querySelector('.js-fast');
+btnFast.onclick = function (){
+  tl.timeScale(2);
+}
+
+var btnNormal = document.querySelector('.js-normal');
+btnNormal.onclick = function (){
+  tl.timeScale(1);
+}
+
+var btnSlow = document.querySelector('.js-slow');
+btnSlow.onclick = function (){
+  tl.timeScale(0.5);
+}
