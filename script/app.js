@@ -39,6 +39,17 @@ tl.set('#Shadow', {
 var btnPause = document.querySelector('.js-pause');
 btnPause.onclick = function (){
   tl.paused(!tl.paused());
+  document.querySelector('.js-pause').innerHTML = ``;
+  if (tl.paused()){
+    document.querySelector('.js-pause').innerHTML = `<svg class="c-play-icon c-play-icon--play" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.5 12.5v-10l7 5-7 5z" stroke="currentColor" stroke-linejoin="round"></path>
+    </svg>`;
+  }
+  else {
+    document.querySelector('.js-pause').innerHTML = `<svg class="c-play-icon c-play-icon--pause" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M5.5 3v9m4-9v9" stroke="currentColor"></path>
+    </svg>`;
+  }
 }
 
 var btnFast = document.querySelector('.js-fast');
