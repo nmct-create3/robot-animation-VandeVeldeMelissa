@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Sprites</title>
+</head>
+<body>
+    <svg style="display:none;">
+        <!-- onze library van symbols die we gaan hergebruiken -->
+        <symbol id="iconBag" viewBox="0 0 512 512">
+        <path d="m296.253906 215.664062v-33.730468l-30.148437-49.582032h-56.453125v-102.351562h16.273437v-30h-155.597656v30h16.273437v102.351562h-55.527343l-31.074219 49.460938v33.851562zm-179.652344-185.664062h63.050782v102.351562h-63.050782zm0 0"/><path d="m0 245.664062v245.835938h38.835938v20.5h30v-20.5h151.617187v20.5h30v-20.5h45.800781v-245.835938zm97.023438 197.835938h-30v-151.394531h30zm66.105468 0h-30v-151.394531h30zm66.101563 0h-30v-151.394531h30zm0 0"/>
+        </symbol>
+        <symbol id="iconPlane" viewBox="0 0 512 512">
+        <path d="M497.535,14.465c-19.569-19.568-51.395-19.241-70.557,0.726L322.092,124.488L66.131,39.781L12.4,93.513l213.352,131.365
+        L117.796,337.372l-69.231-11.366L0,374.571l101.78,35.649L137.429,512l48.565-48.565l-11.366-69.231l112.494-107.955
+        L418.487,499.6l53.732-53.732l-84.706-255.961L496.808,85.022C516.776,65.86,517.103,34.034,497.535,14.465z"/>
+        </symbol>
+     </svg>
+
+     <svg width="50" height="50">
+        <use xlink:href="#iconBag" width="50" height="50" />
+     </svg>
+     
+     <svg width="50" height="50">
+        <use xlink:href="#iconPlane" width="50" height="50" />
+     </svg>
+
+
+</body>
+</html>
