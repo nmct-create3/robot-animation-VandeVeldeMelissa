@@ -12,7 +12,7 @@
 // })
 
 //Timeline
-let tl = gsap.timeline({
+var tl = gsap.timeline({
     defaults: {
       duration: 1,
       ease: 'power1.inOut',
@@ -21,16 +21,17 @@ let tl = gsap.timeline({
     yoyo: true,
   })
 
-  tl.set('#Shadow', {
-    transformOrigin: '50% 100%',
-  })
-  .fromTo('#Robot',{
-    y: 2.5,
-  },{
-    y: -2.5,
-  })
-  .to('#Shadow', {
-    scale: 0.75,
-  },
-    '<',
-  )
+tl.set('#Shadow', {
+  transformOrigin: '50% 100%',
+})
+.fromTo('#Robot',{
+  y: 2.5,
+},{
+  y: -2.5,
+})
+.to('#Shadow', {
+  scale: 0.75,
+  opacity: 0.075,
+},
+  '<',
+)
